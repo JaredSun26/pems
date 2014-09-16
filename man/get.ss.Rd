@@ -18,6 +18,6 @@ get.ss(datasets, pen1 = 2, pen2 = 2, len = 30)
 get steady state time sequence
 }
 \examples{
-#' ss<-get.ss(datasets,pen1=2,pen2=2)
+ss<-get.ss(datasets,pen1=2,pen2=2)
 }
 

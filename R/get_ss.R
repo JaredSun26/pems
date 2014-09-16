@@ -6,6 +6,7 @@
 #' @param pen2 Penalty value used in PELT for occupancy data
 #' @param len The minimum duration of the steady state 
 #' @examples ss<-get.ss(datasets,pen1=2,pen2=2)
+
 get.ss<-function(datasets, pen1 = 2, pen2=2,len = 30){
   require(changepoint)
   ss<-list()

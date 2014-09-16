@@ -6,7 +6,7 @@
 get.total(datasets)
 }
 \arguments{
-\item{dataset}{The output from read.filtered, a list of filtered data where each element correponds to one day's data}
+\item{dataset}{The output from read.filtered(), a list of filtered data where each element correponds to one day's data}
 }
 \description{
 Calulate the total flow and total occupancy accross lanes

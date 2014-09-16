@@ -2,7 +2,11 @@ Package: pems
 Title: Functions to process PeMS 30 second traffic data
 Version: 0.1
 Authors@R: "Zhe Sun <jaredsun26@gmail.com> [aut, cre]"
-Description: This package is used to process 30 second raw loop detector traffic data from PeMS system(http://pems.dot.ca.gov/) and aggregate them into steady state data. The data processing contains three steps: preprocessing, filtering and steady state identification. 
+Description: This package is used to process 30 second raw loop detector
+    traffic data from PeMS system(http://pems.dot.ca.gov/) and aggregate them
+    into steady state data. The data processing contains three steps:
+    preprocessing, filtering and steady state identification. Starting from
+    meta data and pemsData, preprocess->filter->steady state identification
 Depends:
     R (>= 3.1.1)
 License: GPL

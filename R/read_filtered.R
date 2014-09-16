@@ -1,4 +1,4 @@
-#' Read processed PeMS data
+#' Read filtered PeMS data
 #' 
 #' This funtion is used to read filtered PeMS data in csv format with column: Data, Index, vd, flow, occ.
 #' @param directory The directory where the csv files are located, default value is "./filtered/"
