@@ -4,7 +4,7 @@
 \alias{write.filtered}
 \title{A function write the filtered data into csv file}
 \usage{
-write.filtered(tables)
+write.filtered(tables, outDir = "./filtered/")
 }
 \arguments{
 \item{tables}{a list in which each element is a data dataframe for one day's traffic data, the output of read.processed().}

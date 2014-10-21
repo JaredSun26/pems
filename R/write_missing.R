@@ -6,10 +6,10 @@
 
 
 
-write.filtered<-function(tables){
+write.filtered<-function(tables,outDir="./filtered/"){
   for (table in tables){
     id=paste(table[1,3],"-",sep="")
     date=table[1,1]
-    write.csv(file=paste("./filtered/",id, date, ".csv",sep=""), table, quote=F, row.names=F)
+    write.csv(file=paste(outDir,id, date, ".csv",sep=""), table, quote=F, row.names=F)
   }
 }
