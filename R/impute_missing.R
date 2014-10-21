@@ -18,7 +18,7 @@ impute.missing<-function(tables,span=0.75){
     #fill the holes with selected method
     impute<-function(y,index,na.index,span){
       y.loess<-loess(y~index,span=span)
-      y.predict<-round(predict(y.loess, index))
+      y.predict<-predict(y.loess, index)
       y[na.index]<-y.predict[na.index]
       return(y)
     }
