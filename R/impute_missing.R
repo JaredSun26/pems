@@ -3,6 +3,7 @@
 #' @param tables a list in which each element is a data dataframe for one day's traffic data The output of read.processed().
 #' @param span The parameter in  loess which controls the degress of smoothing
 #' @examples tables<-impute.missing(tables)
+#' @export impute.missing
 
 impute.missing<-function(tables,span=0.75){
   #impute missing data with lowess/spline/mean

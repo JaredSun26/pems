@@ -4,6 +4,7 @@
 #'@examples 
 #'datasets<-read.filtered(directory="./filtered/",  files="1213891-2011-09.*\\.csv")
 #'datasets<-get.total(datasets)
+#'@export get.total
 
 get.total<-function(datasets){
   get.total1<-function(dataset){

@@ -4,6 +4,7 @@
 #' @param directory The directory where the csv files are located, default value is "./processed/"
 #' @param condition Regex of the file names, default value is "1213891__2011_09_.*\\.csv"
 #' @examples datasets<-read.processed()
+#' @export read.processed
 
 read.processed<-function(directory="./processed/", condition="1213891__2011_09_.*\\.csv"){
   names<-list.files(directory)

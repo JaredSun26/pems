@@ -4,6 +4,7 @@
 #' @param directory The directory where the csv files are located, default value is "./filtered/"
 #' @param condition Regex of the file names, default value is "1213891-2011-09.*\\.csv"
 #' @examples datasets<-read.filtered(directory="./filtered/",  files="1213891-2011-09.*\\.csv")
+#' @export read.filtered
 
 read.filtered<-function(directory="./filtered/", files="1213891-2011-09.*\\.csv"){
   #directory uses relative directory
