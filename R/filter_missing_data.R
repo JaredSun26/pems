@@ -8,6 +8,6 @@
 
 filter.missing<-function(tables, hole.size=6){
   #remove days with large holes
-  tables<-tables[sapply(tables,function(x) max(diff(c(-1,x$index,2880))<=hole.size))]
+  tables<-tables[sapply(tables,function(x) max(diff(c(-1,x$index,2880)))<=hole.size)]
   return(tables)
 }

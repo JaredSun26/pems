@@ -18,10 +18,10 @@ read.processed<-function(directory="./processed/", condition="1213891__2011_09_.
   clean.table<-function(table){
     
     #add date
-    dt<-strptime(table$time ,format="%m/%d/%Y %H:%M:%S")
+    dt<-strptime(table$time ,format="%m/%d/%Y %H:%M:%S",tz="GMT")
     date<-strftime(trunc(dt,"days"))
     #convert time to index (range=0 to 2879)
-    index<-floor((as.numeric(dt)-28800)%%86400/30)
+    index<-floor(as.numeric(dt)%%86400/30)
     
     #put things together and remove unnessesary columns
     n=ncol(table)
