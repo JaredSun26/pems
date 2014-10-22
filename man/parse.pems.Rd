@@ -21,6 +21,6 @@ This funtion reads in the pems data and reform it into a "comfortable" format wi
 }
 \examples{
 meta <- read.delim("./meta/d12_text_meta_2013_12_14.txt")
-parse.pems(meta)
+parse.pems(meta=meta)
 }
 

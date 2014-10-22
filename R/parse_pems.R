@@ -6,7 +6,7 @@
 #' @param vds A vector of desired VDS's
 #' @param meta The meta data used to parse the data. It is suggested to read in the meta file by function "read.delim"
 #' @examples meta <- read.delim("./meta/d12_text_meta_2013_12_14.txt")
-#' parse.pems(meta)
+#' parse.pems(meta=meta)
 #' @export parse.pems
 
 parse.pems<-function(inDir="./pemsData/",  outDir="./processed/", vds=c(1203501,1203506,1203534,1203536,1212126,1213891),meta){
