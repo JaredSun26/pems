@@ -5,7 +5,7 @@
 #' @examples tables<-impute.missing(tables)
 #' @export impute.missing
 
-impute.missing<-function(tables,span=0.75){
+impute.missing<-function(tables,span=0.25){
   #impute missing data with lowess/spline/mean
   impute.missing1<-function(table){
     #generate full data frame with NA in flow and occ
@@ -15,9 +15,9 @@ impute.missing<-function(tables,span=0.75){
     full[na.index,c(1,3)]=full[min(which(!is.na(full.index))),c(1,3)]
     full[na.index,2]=na.index-1
     
-    #fill the holes with selected method
+    #fill the holes with selected method,allow extraplation by using surface
     impute<-function(y,index,na.index,span){
-      y.loess<-loess(y~index,span=span)
+      y.loess<-loess(y~index,span=span, control = loess.control(surface = "direct"))
       y.predict<-predict(y.loess, index)
       y[na.index]<-y.predict[na.index]
       return(y)

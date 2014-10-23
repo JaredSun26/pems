@@ -4,7 +4,7 @@
 \alias{impute.missing}
 \title{A function to impute missing data using LOWESS based on data index}
 \usage{
-impute.missing(tables, span = 0.75)
+impute.missing(tables, span = 0.25)
 }
 \arguments{
 \item{tables}{a list in which each element is a data dataframe for one day's traffic data The output of read.processed().}
