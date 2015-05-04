@@ -1,5 +1,5 @@
 
-#' get steady state time sequence
+#' get steady state time series
 #' 
 #' @param datasets The output from get.total, a list of filtered data where each element correponds to one day's data
 #' @param pen1 Penalty value used in PELT for flow data
