@@ -1,6 +1,6 @@
 #' Parse Pems raw data and pick a subset of VDS
 #' 
-#' This funtion reads in the pems data and reform it into a "comfortable" format with columns: Time, vds, flow, occ, speed.
+#' This funtion reads in the pems data and reform it into a "comfortable" format with columns: time, vds, flow, occ, speed.
 #' @param inDir The directory where the pems raw files are located, the raw files are in .gz format 
 #' @param outDir The directory to write the output files, the files are in .csv format
 #' @param vds A vector of desired VDS's
