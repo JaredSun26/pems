@@ -1,4 +1,4 @@
-#' A function to apply observation rate filter on dataset
+#' A function to apply observation rate filter
 #' 
 #' @param tables a list in which each element is a data dataframe for one day's traffic data, the output of read.processed().
 #' @param obs.rate The threshold of minimum daily obervation rate
