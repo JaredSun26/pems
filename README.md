@@ -1,4 +1,4 @@
 pems
 ====
 
-An R package to process and work with 30s raw data from PeMS system
+An R package to identify near-stationary states from VDS 30-sec raw data.
